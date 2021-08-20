@@ -1,0 +1,326 @@
+{
+  "data": {
+    "soal_no_1": [
+      {
+        "no_soal": 1,
+        "bobot": 0.5,
+        "soal": "1. Pemasukan/Penghasilan:",
+        "pilihan_jawaban": [
+          {
+            "pilihan": "a. < 1,2 Juta",
+            "point": "100"
+          },
+          {
+            "pilihan": "b. 1,9 - 2,1 Juta",
+            "point": "80"
+          },
+          {
+            "pilihan": "c. 2,2 - 2,6 Juta",
+            "point": "60"
+          },
+          {
+            "pilihan": "d. 2,7 - 3,1 Juta",
+            "point": "40"
+          },
+          {
+            "pilihan": "e. > 3,1 Juta",
+            "point": "20"
+          }
+        ]
+      },
+      {
+        "no_soal": 2,
+        "bobot": 0.4,
+        "soal": "2. Tingkat Daya Listrik:",
+        "pilihan_jawaban": [
+          {
+            "pilihan": "a. 220 VA",
+            "point": "100"
+          },
+          {
+            "pilihan": "b. 450 VA s.d. 900 VA",
+            "point": "80"
+          },
+          {
+            "pilihan": "c. 1.300 VA",
+            "point": "60"
+          },
+          {
+            "pilihan": "d. 2.200 VA",
+            "point": "40"
+          },
+          {
+            "pilihan": "e. > 2.200 VA",
+            "point": "20"
+          }
+        ]
+      },
+      {
+        "no_soal": 3,
+        "bobot": 0.1,
+        "soal": "3. Golongan atau Kategori Pelanggan:",
+        "pilihan_jawaban": [
+          {
+            "pilihan": "a. Golongan Sosial",
+            "point": "100"
+          },
+          {
+            "pilihan": "b. Golongan Bisnis",
+            "point": "60"
+          },
+          {
+            "pilihan": "c. Golongan Industri",
+            "point": "20"
+          }
+        ]
+      }
+    ],
+    "soal_no_2": [
+      {
+        "no_soal": 1,
+        "bobot": 0.6,
+        "soal": "1. Pemasukan/Penghasilan:",
+        "pilihan_jawaban": [
+          {
+            "pilihan": "a. < 1,2 Juta",
+            "point": "100"
+          },
+          {
+            "pilihan": "1,9 - 2,1 Juta",
+            "point": "80"
+          },
+          {
+            "pilihan": "c. 2,2 - 2,6 Juta",
+            "point": "60"
+          },
+          {
+            "pilihan": "d. 2,7 - 3,1 Juta",
+            "point": "40"
+          },
+          {
+            "pilihan": "e. > 3,1 Juta",
+            "point": "20"
+          }
+        ]
+      },
+      {
+        "no_soal": 2,
+        "bobot": 0.1,
+        "soal": "2. Jumlah Keluarga dalam Satu Rumah:",
+        "pilihan_jawaban": [
+          {
+            "pilihan": "a. 1 Orang",
+            "point": "20"
+          },
+          {
+            "pilihan": "b. 2 Orang",
+            "point": "40"
+          },
+          {
+            "pilihan": "c. 3 Orang",
+            "point": "60"
+          },
+          {
+            "pilihan": "d. 4 Orang",
+            "point": "80"
+          },
+          {
+            "pilihan": "e. > 4 Orang",
+            "point": "100"
+          }
+        ]
+      },
+      {
+        "no_soal": 3,
+        "bobot": 0.3,
+        "soal": "3. Jumlah Penghuni Rumah:",
+        "pilihan_jawaban": [
+          {
+            "pilihan": "a. 1 Orang",
+            "point": "20"
+          },
+          {
+            "pilihan": "b. 2 Orang",
+            "point": "40"
+          },
+          {
+            "pilihan": "c. 3 Orang",
+            "point": "60"
+          },
+          {
+            "pilihan": "d. 4 Orang",
+            "point": "80"
+          },
+          {
+            "pilihan": "e. > 4 Orang",
+            "point": "100"
+          }
+        ]
+      }
+    ],
+    "soal_no_3": [
+      {
+        "no_soal": 1,
+        "bobot": 0.25,
+        "soal": "1. Pemasukan/Penghasilan:",
+        "pilihan_jawaban": [
+          {
+            "pilihan": "a. < 1,2 Juta",
+            "point": "100"
+          },
+          {
+            "pilihan": "b. 1,9 - 2,1 Juta",
+            "point": "80"
+          },
+          {
+            "pilihan": "c. 2,2 - 2,6 Juta",
+            "point": "60"
+          },
+          {
+            "pilihan": "d. 2,7 - 3,1 Juta",
+            "point": "40"
+          },
+          {
+            "pilihan": "e. > 3,1 Juta",
+            "point": "20"
+          }
+        ]
+      },
+      {
+        "no_soal": 2,
+        "bobot": 0.10,
+        "soal": "2. Kondisi Kolom dan Balok:",
+        "pilihan_jawaban": [
+          {
+            "pilihan": "a. Kondisi Baik",
+            "point": "20"
+          },
+          {
+            "pilihan": "b. Rusak Ringan",
+            "point": "40"
+          },
+          {
+            "pilihan": "c. Rusak Sedang/Sebagian",
+            "point": "60"
+          },
+          {
+            "pilihan": "d. Rusak Berat/Seluruhnya",
+            "point": "80"
+          },
+          {
+            "pilihan": "e. > Tidak Memiliki Kolom dan Balok",
+            "point": "100"
+          }
+        ]
+      },
+      {
+        "no_soal": 3,
+        "bobot": 0.15,
+        "soal": "3. Kondisi Kontruksi Atap:",
+        "pilihan_jawaban": [
+          {
+            "pilihan": "a. Kondisi Baik",
+            "point": "20"
+          },
+          {
+            "pilihan": "b. Rusak Ringan",
+            "point": "40"
+          },
+          {
+            "pilihan": "c. Rusak Sedang/Sebagian",
+            "point": "60"
+          },
+          {
+            "pilihan": "d. Rusak Berat/Seluruhnya",
+            "point": "80"
+          },
+          {
+            "pilihan": "e. > Tidak Memiliki Kolom dan Balok",
+            "point": "100"
+          }
+        ]
+      },
+      {
+        "no_soal": 4,
+        "bobot": 0.20,
+        "soal": "4. Kondisi Atap:",
+        "pilihan_jawaban": [
+          {
+            "pilihan": "a. Kondisi Baik",
+            "point": "20"
+          },
+          {
+            "pilihan": "b. Rusak Ringan",
+            "point": "40"
+          },
+          {
+            "pilihan": "c. Rusak Sedang/Sebagian",
+            "point": "60"
+          },
+          {
+            "pilihan": "d. Rusak Berat/Seluruhnya",
+            "point": "80"
+          },
+          {
+            "pilihan": "e. > Tidak Memiliki Kolom dan Balok",
+            "point": "100"
+          }
+        ]
+      },
+      {
+        "no_soal": 5,
+        "bobot": 0.20,
+        "soal": "5. Kondisi Dinding:",
+        "pilihan_jawaban": [
+          {
+            "pilihan": "a. Kondisi Baik",
+            "point": "20"
+          },
+          {
+            "pilihan": "b. Rusak Ringan",
+            "point": "40"
+          },
+          {
+            "pilihan": "c. Rusak Sedang/Sebagian",
+            "point": "60"
+          },
+          {
+            "pilihan": "d. Rusak Berat/Seluruhnya",
+            "point": "80"
+          },
+          {
+            "pilihan": "e. > Tidak Memiliki Kolom dan Balok",
+            "point": "100"
+          }
+        ]
+      },
+      {
+        "no_soal": 6,
+        "bobot": 0.10,
+        "soal": "6. Kondisi Lantai:",
+        "pilihan_jawaban": [
+          {
+            "pilihan": "a. Kondisi Baik",
+            "point": "20"
+          },
+          {
+            "pilihan": "b. Rusak Ringan",
+            "point": "40"
+          },
+          {
+            "pilihan": "c. Rusak Sedang/Sebagian",
+            "point": "60"
+          },
+          {
+            "pilihan": "d. Rusak Berat/Seluruhnya",
+            "point": "80"
+          },
+          {
+            "pilihan": "e. > Tidak Memiliki Kolom dan Balok",
+            "point": "100"
+          }
+        ]
+      }
+    ]
+  }
+}

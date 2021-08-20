@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "259160236108",
+    "firebase_url": "https://app-survei-bantuan-default-rtdb.firebaseio.com",
+    "project_id": "app-survei-bantuan",
+    "storage_bucket": "app-survei-bantuan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259160236108:android:ba1bd54ed17dbf77ec14e9",
+        "android_client_info": {
+          "package_name": "android.project.appsurveibantuan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259160236108-dlilcaqq4e2qgkjs0t3unlum47ih4u7i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0zaEYHKVRCikn12mDiOxy3pgseKLs4vg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259160236108-dlilcaqq4e2qgkjs0t3unlum47ih4u7i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259160236108:android:4698e87358e1cd35ec14e9",
+        "android_client_info": {
+          "package_name": "com.example.buttonnavigation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259160236108-dlilcaqq4e2qgkjs0t3unlum47ih4u7i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0zaEYHKVRCikn12mDiOxy3pgseKLs4vg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259160236108-dlilcaqq4e2qgkjs0t3unlum47ih4u7i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
