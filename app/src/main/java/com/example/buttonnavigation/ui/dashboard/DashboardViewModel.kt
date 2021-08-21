@@ -1,36 +1,39 @@
 package com.example.buttonnavigation.ui.dashboard
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.buttonnavigation.modelv1.soal.DataSoal
-import com.example.buttonnavigation.modelv1.Soal
-import com.example.buttonnavigation.modelv1.soal.Soalnya
+import com.example.buttonnavigation.model.SoalNo1Item
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.ktx.database
+import com.google.firebase.database.ktx.getValue
+import com.google.firebase.ktx.Firebase
 
 class DashboardViewModel : ViewModel() {
 
-//    private val _noSatu = MutableLiveData<ArrayList<Soal>>().apply {
-//        value = DataSoal.soalNoSatu
-//    }
-//    val noSatu: LiveData<ArrayList<Soal>> = _noSatu
-//
-//    private val _noDua = MutableLiveData<ArrayList<Soal>>().apply {
-//        value = DataSoal.soalNoDua
-//    }
-//    val noDua: LiveData<ArrayList<Soal>> = _noDua
-//
-//    private val _noTiga = MutableLiveData<ArrayList<Soal>>().apply {
-//        value = DataSoal.soalNoTiga
-//    }
-//    val noTiga: LiveData<ArrayList<Soal>> = _noTiga
+    private val _text = MutableLiveData<ArrayList<SoalNo1Item>>().apply {
+        val database = Firebase.database
+        val myRef = database.getReference("data").child("soal_no_1")
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is dashboard Fragment"
-    }
-    val text: LiveData<String> = _text
+        // Read from the database
+        myRef.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                val dataSoal: ArrayList<SoalNo1Item> = arrayListOf()
+                for (dataSnapshot1 in snapshot.children) {
+                    val surveyor = dataSnapshot1.getValue(SoalNo1Item::class.java)
+                    surveyor?.let { dataSoal.add(it) }
+                }
+                value = dataSoal
+            }
 
-    private val _semuaSoal = MutableLiveData<ArrayList<Soalnya>>().apply {
-        value = DataSoal.soalSemua
+            override fun onCancelled(error: DatabaseError) {
+                Log.w("Notification ->>", "Failed to read value.", error.toException())
+            }
+        })
     }
-    val semuaSoal: LiveData<ArrayList<Soalnya>> = _semuaSoal
+    val text: LiveData<ArrayList<SoalNo1Item>> = _text
+
 }

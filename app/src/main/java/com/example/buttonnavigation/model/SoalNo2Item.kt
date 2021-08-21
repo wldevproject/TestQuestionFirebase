@@ -7,6 +7,6 @@ import kotlinx.android.parcel.Parcelize
 data class SoalNo2Item(
 	val bobot: Double? = null,
 	val soal: String? = null,
-	val pilihanJawaban: List<PilihanJawabanItem?>? = null,
-	val noSoal: Int? = null
+	val pilihan_jawaban: List<PilihanJawabanItem?>? = null,
+	val no_soal: Int? = null
 ) : Parcelable

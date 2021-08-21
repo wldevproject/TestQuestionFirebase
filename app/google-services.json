@@ -37,9 +37,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:259160236108:android:4698e87358e1cd35ec14e9",
+        "mobilesdk_app_id": "1:259160236108:android:e98cc797301e6a40ec14e9",
         "android_client_info": {
-          "package_name": "com.example.buttonnavigation"
+          "package_name": "com.cnd.testquestionfirebase"
         }
       },
       "oauth_client": [
