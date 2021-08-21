@@ -18,16 +18,16 @@ import com.example.buttonnavigation.model.SoalNo1Item
  ** Author @JoeFachrizal
  ** Happy Code...
  **/
-class ListSoalAdapter(private var listSoal: ArrayList<SoalNo1Item>) :
-    RecyclerView.Adapter<ListSoalAdapter.ViewHolder>() {
+class ListSoal1Adapter(private var listSoal: ArrayList<SoalNo1Item>) :
+    RecyclerView.Adapter<ListSoal1Adapter.ViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListSoalAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListSoal1Adapter.ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         val view = ItemTextfieldBinding.inflate(layoutInflater, parent, false)
         return ViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: ListSoalAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ListSoal1Adapter.ViewHolder, position: Int) {
         holder.bind(listSoal[position])
     }
 

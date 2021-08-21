@@ -9,7 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.buttonnavigation.ConsData
-import com.example.buttonnavigation.adapter.ListSoalAdapter
+import com.example.buttonnavigation.adapter.ListSoal1Adapter
 import com.example.buttonnavigation.databinding.FragmentDashboardBinding
 import com.example.buttonnavigation.model.SoalNo1Item
 import kotlin.math.pow
@@ -21,7 +21,7 @@ class DashboardFragment : Fragment() {
     private lateinit var dashboardViewModel: DashboardViewModel
     private var _binding: FragmentDashboardBinding? = null
     private val binding get() = _binding!!
-    private lateinit var adapter: ListSoalAdapter
+    private lateinit var adapter: ListSoal1Adapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -38,6 +38,8 @@ class DashboardFragment : Fragment() {
             initData(it)
         })
 
+        ConsData.pilihan.clear()
+        ConsData.nilai.clear()
         return root
     }
 
@@ -48,7 +50,7 @@ class DashboardFragment : Fragment() {
             ViewCompat.setNestedScrollingEnabled(rvListSoal, true)
         }
 
-        adapter = ListSoalAdapter(arrayList)
+        adapter = ListSoal1Adapter(arrayList)
         binding.rvListSoal.adapter = adapter
 
         for (data in arrayList) {
@@ -105,7 +107,6 @@ class DashboardFragment : Fragment() {
             }
         }
     }
-
 
     override fun onDestroyView() {
         super.onDestroyView()

@@ -5,7 +5,7 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class SoalNo3Item(
-	val bobot: Double? = null,
+	val bobot: Double = 0.0,
 	val soal: String? = null,
 	val photo: String? = null,
 	val pilihan_jawaban: List<PilihanJawabanItem?>? = null,

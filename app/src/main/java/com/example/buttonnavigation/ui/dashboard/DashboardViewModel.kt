@@ -9,10 +9,13 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
-import com.google.firebase.database.ktx.getValue
 import com.google.firebase.ktx.Firebase
 
 class DashboardViewModel : ViewModel() {
+    private val _title = MutableLiveData<String>().apply {
+        value = "Point penlilaian Bantuan Listrik:"
+    }
+    val title: LiveData<String> = _title
 
     private val _text = MutableLiveData<ArrayList<SoalNo1Item>>().apply {
         val database = Firebase.database
