@@ -8,19 +8,12 @@ import com.example.buttonnavigation.model.SoalNo1Item
  ** Happy Code...
  **/
 object ConsData {
-    const val SUCCESS = "success"
-    val test = arrayListOf(0, 0, 0)
     var pilihan: ArrayList<String> = arrayListOf()
     var nilai: ArrayList<Int> = arrayListOf()
-//    var bobot: ArrayList<Double> = arrayListOf()
 
-    var fresult = 0.0
+    var fresult1 = 0.0
+    var fresult2 = 0.0
+    var fresult3 = 0.0
 
-    var pilihanSatu: String = ""
-    var nilaiSatu: Int = 0
-    var pilihanDua: String = ""
-    var nilaiDua: Int = 0
-    var pilihanTiga: String = ""
-    var nilaiTiga: Int = 0
-
+    var pilihanNoSatu = 0
 }

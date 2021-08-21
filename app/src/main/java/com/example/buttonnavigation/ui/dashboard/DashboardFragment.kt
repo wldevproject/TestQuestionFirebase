@@ -34,6 +34,10 @@ class DashboardFragment : Fragment() {
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
+        dashboardViewModel.title.observe(viewLifecycleOwner,{
+            binding.title.text = it
+        })
+
         dashboardViewModel.text.observe(viewLifecycleOwner, {
             initData(it)
         })
@@ -86,7 +90,7 @@ class DashboardFragment : Fragment() {
                     result.add(fHasil)
                     jumHasil += fHasil
                 }
-                ConsData.fresult = (jumHasil * temp).roundToInt().toDouble() / temp
+                ConsData.fresult1 = (jumHasil * temp).roundToInt().toDouble() / temp
 
                 Toast.makeText(
                     requireContext(),
@@ -94,11 +98,11 @@ class DashboardFragment : Fragment() {
                             "nilai max $max\n" +
                             "${stapNilai}\n" +
                             "${result}\n" +
-                            "Hasil nilai adalah ${ConsData.fresult}",
+                            "Hasil nilai adalah ${ConsData.fresult1}",
                     Toast.LENGTH_SHORT
                 ).show()
 
-                val text = if (ConsData.fresult > 0.5) {
+                val text = if (ConsData.fresult1 > 0.5) {
                     "Kamu Mendapatkan Bantuan"
                 } else {
                     "Kamu Tidak Mendapatkan Bantuan"

@@ -32,6 +32,10 @@ class NotificationsFragment : Fragment() {
         _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
+        notificationsViewModel.title.observe(viewLifecycleOwner, {
+            binding.title.text = it
+        })
+
         notificationsViewModel.text.observe(viewLifecycleOwner, {
             initData(it)
         })
@@ -84,7 +88,7 @@ class NotificationsFragment : Fragment() {
                     result.add(fHasil)
                     jumHasil += fHasil
                 }
-                ConsData.fresult = (jumHasil * temp).roundToInt().toDouble() / temp
+                ConsData.fresult2 = (jumHasil * temp).roundToInt().toDouble() / temp
 
                 Toast.makeText(
                     requireContext(),
@@ -92,11 +96,11 @@ class NotificationsFragment : Fragment() {
                             "nilai max $max\n" +
                             "${stapNilai}\n" +
                             "${result}\n" +
-                            "Hasil nilai adalah ${ConsData.fresult}",
+                            "Hasil nilai adalah ${ConsData.fresult2}",
                     Toast.LENGTH_SHORT
                 ).show()
 
-                val text = if (ConsData.fresult > 0.5) {
+                val text = if (ConsData.fresult2 > 0.5) {
                     "Kamu Mendapatkan Bantuan"
                 } else {
                     "Kamu Tidak Mendapatkan Bantuan"
