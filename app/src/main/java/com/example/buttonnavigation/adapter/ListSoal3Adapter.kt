@@ -38,13 +38,7 @@ class ListSoal3Adapter(private var listSoal: ArrayList<SoalNo3Item>) :
     ) {
         fun bind(dataItem: SoalNo3Item) {
             binding.apply {
-                var text =""
-                text = if (ConsData.pilihanNoSatu == 1){
-                    "pertanyaan sudah di jawab"
-                } else{
-                    dataItem.soal
-                }
-                soal.text = text
+                soal.text = dataItem.soal
 
                 val list = ArrayList<String>()
                 dataItem.pilihan_jawaban?.forEach { aData ->
@@ -56,9 +50,27 @@ class ListSoal3Adapter(private var listSoal: ArrayList<SoalNo3Item>) :
 
                 (binding.textField.editText as? AutoCompleteTextView)?.onItemClickListener =
                     AdapterView.OnItemClickListener { parent, _, pos, _ ->
-                        ConsData.pilihan[dataItem.no_soal?.minus(1) ?: 0] = parent.getItemAtPosition(pos).toString()
-                        ConsData.nilai[dataItem.no_soal?.minus(1) ?: 0] = dataItem.pilihan_jawaban?.get(pos)?.point?.toInt() ?: 0
-                        Toast.makeText(itemView.context, "${ConsData.pilihan} ->> ${ConsData.nilai}", Toast.LENGTH_SHORT)
+                        ConsData.pilihan[dataItem.no_soal?.minus(1) ?: 0] =
+                            parent.getItemAtPosition(pos).toString()
+//                        ConsData.nilai[dataItem.no_soal?.minus(1) ?: 0] = ataItem.pilihan_jawaban?.get(pos)?.point?.toInt() ?: 0
+
+//                        if (dataItem.no_soal != 1) {
+//                            if (dataItem.pilihan_jawaban?.get(pos)?.point?.toInt() ?: 0 != 20) {
+//                                ConsData.nilai[dataItem.no_soal?.minus(1) ?: 0] = 1
+//                            } else {
+                                ConsData.nilai[dataItem.no_soal?.minus(1) ?: 0] =
+                                    dataItem.pilihan_jawaban?.get(pos)?.point?.toInt() ?: 0
+//                            }
+//                        } else {
+//                            ConsData.nilai[dataItem.no_soal.minus(1)] =
+//                                dataItem.pilihan_jawaban?.get(pos)?.point?.toInt() ?: 0
+//                        }
+
+                        Toast.makeText(
+                            itemView.context,
+                            "${ConsData.pilihan}\n${ConsData.nilai}\n${dataItem.no_soal}",
+                            Toast.LENGTH_SHORT
+                        )
                             .show()
                     }
             }

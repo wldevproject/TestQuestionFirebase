@@ -100,7 +100,7 @@ class NotificationsFragment : Fragment() {
                     Toast.LENGTH_SHORT
                 ).show()
 
-                val text = if (ConsData.fresult2 > 0.5) {
+                val text = if (ConsData.fresult2 > 0.6) {
                     "Kamu Mendapatkan Bantuan"
                 } else {
                     "Kamu Tidak Mendapatkan Bantuan"

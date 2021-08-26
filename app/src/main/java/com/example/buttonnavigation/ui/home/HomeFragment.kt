@@ -101,7 +101,7 @@ class HomeFragment : Fragment() {
                     Toast.LENGTH_SHORT
                 ).show()
 
-                val text = if (ConsData.fresult3 > 0.5) {
+                val text = if (ConsData.fresult3 > 0.7) {
                     "Kamu Mendapatkan Bantuan"
                 } else {
                     "Kamu Tidak Mendapatkan Bantuan"
